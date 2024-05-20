@@ -10,96 +10,157 @@
 <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
 </head>
-<body>
+<body cz-shortcut-listen="true">
     <div class="weather-app">
-    <header>
+      <header>
         <form class="search-form" id="search-form">
-            <input 
-            type="search" 
-            placeholder="Enter a city..." 
-            required
-            id="search-form-input" 
-            class="search-form-input"
-            />
-            <input type="submit" value="Search" class="search-form-button" />
+          <input type="search" placeholder="Enter a city.." required="" id="search-form-input" class="search-form-input">
+          <input type="submit" value="Search" class="search-form-button">
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weather-app-data">
-        <div>
-    <h1 class="weather-app-city" id="city"></h1>
-    <p class="weather-app-details">
-       <span id="time"></span>
-       <span id="description"></span> 
-        <br />
-        Humidity: <strong id="humidity"></strong>, Wind: 
-        <strong id="wind-speed"></strong>
-    </p>
-    </div>
-        <div class="weather-app-temperature-container">
-        <div id="icon"></div>
-        <div class="weather-app-temperature-value" id="temperature"></div>
-        <div class="weather-app-unit">°C</div> 
-    </div>
-    </div>
-    <div class="weather-forecast" id="forecast">
-        <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Fri</div>
-
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>20º</strong>
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              <span id="time">Monday 11:47</span>,
+              <span id="description">few clouds</span>
+              <br>
+              "Humidity: "
+               <strong id="humidity">61%</strong>
+               ", Wind: "
+              <strong id="wind-speed">4.12km/h</strong>
+            </p>
           </div>
-          <div class="weather-forecast-temperature">11º</div>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" class="weather-app-icon"></div>
+            <div class="weather-app-temperature" id="temperature">20</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-      </div>
+        <div class="weather-forecast" id="forecast">
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Mon</div>
 
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" class="weather-forecast-icon">
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
             <strong>22º</strong>
           </div>
-          <div class="weather-forecast-temperature">14º</div>
+          <div class="weather-forecast-temperature">12º</div>
         </div>
       </div>
+    
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Tue</div>
 
         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
-            <strong>18º</strong>
+            <strong>19º</strong>
           </div>
           <div class="weather-forecast-temperature">12º</div>
         </div>
       </div>
+    
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Wed</div>
 
         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
+            <strong>20º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+      </div>
+    
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Thu</div>
+
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>17º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+      </div>
+    
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Fri</div>
+
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        </div>
+        <div class="weather-forecast-temperatures" id="temperature">20</div>
+        <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
+      <div class="weather-forecast" id="forecast">
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Mon</div>
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>22º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Tue</div>
+
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
             <strong>19º</strong>
           </div>
-          <div class="weather-forecast-temperature">10º</div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+      </div>
+
+      </div>
+          <div class="weather-forecast-temperature">
+            <strong>19º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+      </div>
+    <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Wed</div>
+
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>20º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
         </div>
       </div>
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Thu</div>
 
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
-            <strong>20º</strong>
+            <strong>17º</strong>
           </div>
-          <div class="weather-forecast-temperature">11º</div>
+          <div class="weather-forecast-temperature">12º</div>
+        </div>
+      </div>
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Fri</div>
+
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>19º</strong>
+          </div>
+          <div class="weather-forecast-temperature">12º</div>
         </div>
       </div>
     </div>
-    </main>
+      </main>
 
     <footer>
         This project was coded by
@@ -108,7 +169,7 @@
         <a href ="https://github.com/mmokoto/final-project-week8" target = "_blank"
         > open-sourced GitHub </a
     > and 
-        <a href ="https://darling-taffy-d14e3d.netlify.app" target = "_blank"
+        <a href ="" target = "_blank"
         >hosted on Netlify </a
     >
     </footer>
